@@ -1,0 +1,16 @@
+[Unit]
+Description=discord-matic-ticker
+Wants=basic.target
+After=basic.target network.target
+Before=sshd.service
+
+[Service]
+SyslogIdentifier=discord-matic-ticker
+StandardOutput=syslog
+StandardError=syslog
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/etc/discord-matic-ticker/discord-matic-ticker
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
