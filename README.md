@@ -1,4 +1,7 @@
 # discord-matic-ticker
+
+⚠️This project has been merged with [discord stock tickers](https://github.com/rssnyder/discord-stock-ticker).⚠️
+
 Live matic tickers for your discord server.
 
 This repo is a clone/redo of another project of mine. The documentation here might not be the best, and if you need further help please join the support server linked below.
